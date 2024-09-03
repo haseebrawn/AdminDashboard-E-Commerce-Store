@@ -1,0 +1,129 @@
+.app.dark {
+  background-color: #111 !important;
+  color: rgb(156, 156, 156) !important;
+
+  .css-n3fyjk-MuiDataGrid-root{
+    color: rgb(156, 156, 156) !important;
+  }
+  .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root{
+    color: rgb(156, 156, 156) !important;;
+  }
+  .MuiTablePagination-root {
+    color: rgb(179 179 179 / 87%) !important;
+  }
+
+  .chartGrid {
+    stroke: rgba(228, 228, 228, 0.219);
+  }
+  .css-1w53k9d-MuiDataGrid-overlay{
+    background-color: #111 !important;
+  }
+
+  .table {
+    background-color: #111;
+
+    .tableCell {
+      color: gray;
+    }
+  }
+
+  .navbar {
+    color: #999;
+    border-color: #333;
+
+    .search {
+      border-color: gray;
+    }
+    .items{
+      .item{
+        .languageMenu{
+          background-color: #111;
+          color: #999;
+        }
+      }
+    }
+    .items{
+      .item{
+        .languageMenu div:hover{
+          background-color: #333;
+        }
+      }
+    }
+  }
+
+  .sidebar {
+    background-color: #111;
+    border-color: #333;
+
+    .top {
+      .logo {
+        color: #999;
+      }
+    }
+
+    hr {
+      border-color: #333;
+    }
+    
+
+    ul {
+      li {
+        &:hover {
+          background-color: #333;
+        }
+
+        .icon {
+          color: #999;
+        }
+      }
+    }
+  }
+
+  .datatable {
+    .datagrid {
+      color: gray;
+      border: none;
+
+      .MuiSvgIcon-root{
+          color: gray;
+        }
+
+      .viewButton,
+      .deleteButton,
+      .cellWithStatus {
+        color: gray;
+        border: none;
+        background-color: transparent;
+      }
+
+      /* Adding styles for pagination */
+      .css-rtrcn9-MuiTablePagination-root {
+        background-color: #111;
+        color: gray;
+        border-top: 1px solid #333;
+        border: none;
+      }
+
+      .css-pqjvzy-MuiSvgIcon-root-MuiSelect-icon {
+        color: gray;
+        border: none;
+      }
+      .css-ptiqhd-MuiSvgIcon-root{
+          color: gray;
+        }
+        .css-yrdy0g-MuiDataGrid-columnHeaderRow{
+          background-color: transparent;
+        }
+        
+    }
+    h1{
+      color: #999;
+    }
+  }
+
+  input {
+    background-color: transparent;
+    color: gray !important;
+  } 
+}
+
