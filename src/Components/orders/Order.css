@@ -1,0 +1,74 @@
+.tdrow{
+    display: flex;
+    gap: 6px;
+}
+.datatable{
+    height: 500px;
+    padding: 20px;
+}
+.MuiDataGrid-root .MuiDataGrid-cellEmpty {
+    padding: 0 !important;
+    height: 52px !important;
+}
+.MuiDataGrid-footerContainer{
+    border: none !important;
+    /* margin-bottom: 15px; */
+}
+.MuiDataGrid-cell{
+    line-height: 20px !important;
+}
+p{
+    margin-bottom: 0 !important;
+}
+.MuiDataGrid-root .MuiDataGrid-cellEmpty {
+    display: none;
+}
+.MuiDataGrid-cell:focus-within{
+    outline: none !important;
+}
+.MuiDataGrid-columnHeaderRow{
+    justify-content: space-between !important;
+    /* margin-left: 5px; */
+}
+.MuiDataGrid-filler{
+    display: none ;
+}
+.css-yrdy0g-MuiDataGrid-columnHeaderRow{
+    justify-content: space-between !important;
+}
+.MuiDataGrid-root .MuiDataGrid-scrollbarFiller{
+    display: none;
+}
+.css-n3fyjk-MuiDataGrid-root .MuiDataGrid-columnHeader{
+    margin-right: 5px;
+}
+.MuiDataGrid-root .MuiDataGrid-columnHeader:focus{
+    outline: none !important;
+}
+.MuiDataGrid-root .MuiDataGrid-cell {
+    border: none !important;
+}
+.MuiDataGrid-root .MuiDataGrid-virtualScrollerContent .MuiDataGrid-row {
+    border-bottom: 1px solid #d5d1d1;
+}
+.MuiTablePagination-root {
+    color: rgb(92 92 92 / 87%) !important;
+}
+.css-tgsonj{
+    display: none;
+}
+.css-n3fyjk-MuiDataGrid-root .MuiDataGrid-filler{
+    display: none;
+}
+.css-n3fyjk-MuiDataGrid-root .MuiDataGrid-container--bottom {
+    display: none;
+}
+.css-n3fyjk-MuiDataGrid-root .MuiDataGrid-withBorderColor {
+    margin-bottom: 13px;
+}
+.size-name{
+    margin-right: 8px;
+}
+.css-n3fyjk-MuiDataGrid-root .MuiDataGrid-columnHeader {
+    margin-right: 10px;
+}

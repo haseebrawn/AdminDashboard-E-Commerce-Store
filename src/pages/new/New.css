@@ -1,0 +1,195 @@
+.new {
+    width: 100%;
+    display: flex;
+  
+    .newContainer {
+      flex: 6;
+  
+      .top,
+      .bottom {
+        -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+        padding: 10px;
+        margin: 20px;
+        display: flex;
+  
+        
+  
+        .left {
+          flex: 1;
+          text-align: center;
+  
+          img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+        }
+  
+        .right {
+          flex: 2;
+          margin: 15px 45px 0 45px;
+  
+          form {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: space-around;
+  
+            .formInput {
+              width: 48%;
+  
+              label {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+  
+                .icon {
+                  cursor: pointer;
+                }
+              }
+  
+              
+            }
+  
+            
+          }
+        }
+      }
+    }
+  }
+
+
+  .row-title{
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+    padding: 5px;
+    margin: 10px !important;
+  }
+  h1 {
+    margin-top: 7px !important;
+    color: lightgray !important;
+    font-size: 20px !important;
+  }
+
+.content-container{
+   flex-direction: column;
+   -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+    padding: 5px;
+    margin: 10px !important;
+}
+.img-container{
+  text-align: center;
+  margin-bottom: 30px;
+}
+.img-fluid{
+  border-radius: 50%;
+  height: 110px !important;
+  max-width: 200px !important;
+}
+.user-form{
+  display: flex;
+  flex-wrap: wrap;
+}
+.btn-send {
+  padding: 10px 40px;
+  border: none;
+  background-color: teal;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+label {
+  display: flex !important;
+  align-items: center;
+  gap: 10px;
+}
+.icon {
+  cursor: pointer;
+}
+input {
+  padding: 5px;
+  border: none;
+  border-bottom: 1px solid gray;
+  outline: none;
+}
+.col-12{
+  text-align: center;
+}
+.btn-size{
+  text-align: center;
+}
+.btnAddSize{
+    padding: 10px 25px;
+    border: none;
+    background-color: teal;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+.drop-size{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.input-size{
+  outline: none;
+}
+.drop-quantity{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 10px; */
+}
+.form-quantity{
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+.drop-quantity{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.quantity_input{
+  margin-bottom: 10px;
+}
+.btn-quantity{
+  text-align: center;
+}
+.btnAddQuantity{
+  padding: 10px 10px;
+  border: none;
+  background-color: teal;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+.sizeQuantity{
+  text-align: center;
+  margin-top: 10px;
+}
+.size-ul{
+  list-style-type: none;
+}
+.remove-size-btn{
+  border: none;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+.size-li{
+  margin-bottom: 5px;
+}
