@@ -39,8 +39,9 @@ function App() {
                 element={<New inputs={productInputs} title="Add New Product" formType="product" />}
               />
             </Route>
-            <Route path="orders" >
-              <Route index element={<OrderList />}/>
+            <Route path="orders">
+              <Route index element={<OrderList />} />
+              <Route path=":id" element={<Single />} /> {/* Single Order Route */}
             </Route>
           </Route>
         </Routes>

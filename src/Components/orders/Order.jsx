@@ -6,7 +6,6 @@ import "./Order.css";
 
 const Order = () => {
   const [orders, setOrders] = useState([]);
-  const [page, setPage] = useState(1);
 
   useEffect(() => {
     const fetchOrders = async () => {
@@ -21,7 +20,7 @@ const Order = () => {
     };
 
     fetchOrders();
-  }, [page]);
+  }, []);
 
   const handleDelete = async (id) => {
     try {
@@ -29,20 +28,6 @@ const Order = () => {
       setOrders(orders.filter((order) => order._id !== id));
     } catch (error) {
       console.error("Error deleting order:", error);
-    }
-  };
-
-  const handleUpdateStatus = async (id, newStatus) => {
-    try {
-      const response = await axios.patch(
-        `${process.env.REACT_APP_PORT}/api/order/${id}`,
-        { status: newStatus }
-      );
-      setOrders(orders.map((order) =>
-        order._id === id ? response.data.data.order : order
-      ));
-    } catch (error) {
-      console.error("Error updating order status:", error);
     }
   };
 
@@ -87,15 +72,21 @@ const Order = () => {
     {
       field: "action",
       headerName: "Action",
-      width: 160,
+      width: 220,
       renderCell: (params) => {
         return (
           <div className="cellAction">
             <Link
               className="viewButton"
-              style={{ textDecoration: "none" }}
+              style={{ textDecoration: "none", marginRight: "10px" }}
+              to={`/single/${params.row.id}`} // Navigate to Single.jsx
+            >
+              View
+            </Link>
+            <Link
+              className="editButton"
+              style={{ textDecoration: "none", marginRight: "10px" }}
               to={`/order/edit/${params.row.id}`}
-              onClick={() => handleUpdateStatus(params.row.id, "completed")}
             >
               Edit
             </Link>
